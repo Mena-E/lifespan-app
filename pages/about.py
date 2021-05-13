@@ -16,7 +16,9 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
             ## About Mena
-            I am a Data Scientist with a passion for sports analytics. I harbor some interest in applying Data Science and Statistical analysis to gain a better understanding of social and economic issues. But my deepest fascination lies in how to apply Data Science to help the world transition from our centuries old reliance on fossil fuels to cleaner more sustainable energy sources.
+            I am a Data Scientist with a passion for sports analytics. I harbor some interest in applying Data Science and Statistical analysis to gain a better understanding of social and economic issues. 
+            
+            But my deepest fascination lies in how to apply Data Science to help the world transition from our centuries old reliance on fossil fuels to cleaner more sustainable energy sources.
             """, className='mb-5'),
         
         #dcc.Markdown('## About Mena ', className='mb-10'),

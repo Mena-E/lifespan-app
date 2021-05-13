@@ -20,20 +20,20 @@ column1 = dbc.Col(
 
             Your life expectancy may be related to how happy you are.
 
-            Please imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. 
-            The top of the ladder represents the best possible life for you and the bottom of the 
+            Imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. 
+            The top of the ladder represents the best possible life for you, and the bottom of the 
             ladder represents the worst possible life for you. 
             
-            On which step of the ladder would 
-            you say you personally feel you stand at this time?" This measure is also referred to 
-            as Cantril life ladder. Where you stand on the ladder is your happiness score.
+            On which step of the ladder would you say you personally feel you stand at this time?" 
+            This measure is also referred to as Cantril's life ladder. Where you stand on the ladder 
+            is your happiness score.
 
-            My Life is a running app that can help predict your life expectancy based on your happiness score.
+            LIFESPAN2020 is a running app that can help predict your life expectancy based on your happiness score.
 
             
             """
         ),
-        dcc.Link(dbc.Button('Give My Life a try', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Give LIFESPAN2020 a try', color='primary'), href='/predictions')
     ],
     md=4,
 )

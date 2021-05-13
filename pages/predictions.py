@@ -81,7 +81,7 @@ def predict(happiness_score):
                     data=[[happiness_score]])
   y_pred = predictor.predict(df)[0]
   result = round(y_pred, 2)
-  return f'You will likely live to {result:.0f} YRS old'
+  return f'You are likely to live up to {result:.0f} YRS old'
 
 
 layout = dbc.Row([column1, column2])
