@@ -29,8 +29,9 @@ column1 = dbc.Col(
             """
             Using Lifespan2020 is easy. Just drag the slider to select your happiness score to see a display of your life expectancy in years.
 
-            """, className='mb-5'
-        ),
+            """, style={'textAlign': 'left',
+                            'font-size': 22},
+                     className='mb-5'),
 
         dcc.Markdown('### Happiness Score (%)'),
         dcc.Slider(id='happiness_score',
@@ -42,13 +43,13 @@ column1 = dbc.Col(
                    ),
         dcc.Markdown('', id='output_happy',
                      style={'textAlign': 'left',
-                            'font-size': 18},
+                            'font-size': 22},
                      className='mb-5'),
 
         dcc.Markdown('### Prediction:'),
         dcc.Markdown('', id='prediction-content',
                      style={'textAlign': 'left',
-                            'font-size': 18},
+                            'font-size': 22},
                      className='mb-5'),
 
     ],
@@ -80,7 +81,7 @@ def predict(happiness_score):
                     data=[[happiness_score]])
   y_pred = predictor.predict(df)[0]
   result = round(y_pred, 2)
-  return f'You will likely live to {result:.0f} YRS'
+  return f'You will likely live to {result:.0f} YRS old'
 
 
 layout = dbc.Row([column1, column2])
