@@ -18,11 +18,9 @@ column1 = dbc.Col(
         
             ## How long will you live?
 
-            Your life expectancy may be related to how happy you are.
-
-            Imagine a ladder, with steps numbered from 0 at the bottom to 10 at the top. 
-            The top of the ladder represents the best possible life for you, and the bottom of the 
-            ladder represents the worst possible life for you. 
+            Your life expectancy may be related to how happy you are. Imagine a ladder, with steps 
+            numbered from 0 at the bottom to 10 at the top. The top of the ladder represents the best 
+            possible life for you, and the bottom of the ladder represents the worst possible life for you. 
             
             On which step of the ladder would you say you personally feel you stand at this time?" 
             This measure is also referred to as Cantril's life ladder. Where you stand on the ladder 

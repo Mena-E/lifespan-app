@@ -37,7 +37,7 @@ footer = dbc.Container(
                 [
                     html.Span('Mena Ekelemu', className='mr-2'), 
                     html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:odemena@me.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://https://github.com/Mena-E/life-expectancy'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://https://github.com/Mena-E/life-app'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/mena-ekelemu/'), 
                     html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/m_ekelemu'), 
                 ], 

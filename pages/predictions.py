@@ -67,7 +67,7 @@ column2 = dbc.Col(
     Output(component_id='output_happy', component_property='children'),
     [Input(component_id='happiness_score', component_property='value')])
 def update_output_div1(input_value):
-    return 'You have selected a happiness score of {}%'.format(input_value)
+    return 'You selected a happiness score of {}%'.format(input_value)
 
 
 @app.callback(
@@ -81,7 +81,7 @@ def predict(happiness_score):
                     data=[[happiness_score]])
   y_pred = predictor.predict(df)[0]
   result = round(y_pred, 2)
-  return f'You are likely to live up to {result:.0f} YRS old'
+  return f'You are likely to live to be {result:.0f} YRS old'
 
 
 layout = dbc.Row([column1, column2])
