@@ -45,11 +45,11 @@ column1 = dbc.Col(
                             'font-size': 18},
                      className='mb-5'),
 
-        # dcc.Markdown('### Prediction:'),
-        # dcc.Markdown('', id='prediction-content',
-        #              style={'textAlign': 'left',
-        #                     'font-size': 18},
-        #              className='mb-5'),
+        dcc.Markdown('### Prediction:'),
+        dcc.Markdown('', id='prediction-content',
+                     style={'textAlign': 'left',
+                            'font-size': 18},
+                     className='mb-5'),
 
     ],
     md=6,
@@ -69,18 +69,18 @@ def update_output_div1(input_value):
     return 'You have selected a happiness score of {}%'.format(input_value)
 
 
-# @app.callback(
-#     Output('prediction-content', 'children'),
-#     [
-#         Input('happiness_score', 'value')
-#     ])
+@app.callback(
+    Output('prediction-content', 'children'),
+    [
+        Input('happiness_score', 'value')
+    ])
 
-# def predict(happiness_score):
-#   df = pd.DataFrame(columns=['happiness_score'],
-#                     data=[[happiness_score]])
-#   y_pred = predictor.predict(df)[0]
-#   result = round(y_pred, 2)
-#   return f'You will likely live to {result:.0f} YRS'
+def predict(happiness_score):
+  df = pd.DataFrame(columns=['happiness_score'],
+                    data=[[happiness_score]])
+  y_pred = predictor.predict(df)[0]
+  result = round(y_pred, 2)
+  return f'You will likely live to {result:.0f} YRS'
 
 
 layout = dbc.Row([column1, column2])
